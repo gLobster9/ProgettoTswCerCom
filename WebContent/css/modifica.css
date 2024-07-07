@@ -1,0 +1,103 @@
+.inserimentoProdotti {
+  font-family: Arial, sans-serif;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.inserimentoProdotti h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inserimentoProdotti form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inserimentoProdotti fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inserimentoProdotti legend {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.inserimentoProdotti label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.inserimentoProdotti input[type="text"],
+.inserimentoProdotti input[type="number"],
+.inserimentoProdotti input[type="file"],
+.inserimentoProdotti textarea,
+.inserimentoProdotti select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.inserimentoProdotti input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.inserimentoProdotti input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.inserimentoProdotti textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.inserimentoProdotti select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 18px 18px;
+}
+
+.inserimentoProdotti select:focus {
+  border-color: #4CAF50;
+}
+
+.inserimentoProdotti select::-ms-expand {
+  display: none;
+}
+
+.non-valido {
+    color: #cb0202;
+}
+
+@media (max-width: 600px) {
+  .inserimentoProdotti {
+    padding: 15px;
+  }
+
+  .inserimentoProdotti h1 {
+    font-size: 1.5em;
+  }
+}

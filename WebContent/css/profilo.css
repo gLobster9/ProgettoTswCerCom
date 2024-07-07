@@ -1,0 +1,245 @@
+/* Container principale */
+.profilo {
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+	border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+.utente-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.utente-header * {
+	margin: auto 0;
+}
+.utente-header h3 {
+    color: #333;
+    font-size: 1.8em;
+}
+.utente-header a {
+	text-decoration: none;
+}
+
+.indirizzo-e-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.indirizzo, .metodo-di-pagamento {
+    width: 48%;
+}
+
+.indirizzo-header, .pagamento-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.pagamento-header .header-title, .indirizzo-header .header-title {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.indirizzo-body, .pagamento-body-no-modifica {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    border: 1px solid #ddd;
+}
+
+.indirizzo-body label, .pagamento-body-no-modifica label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.indirizzo-body input, .pagamento-body-no-modifica input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* .modifica-indirizzo, .modifica-pagamento {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    border-radius: 10px;
+}
+
+#overlayIndirizzo, #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.activeModifica {
+    display: block;
+}
+
+.activeOverlay {
+    display: block;
+}
+
+.close-button {
+    background: #007bff; 
+    border: none; 
+    font-size: 1.5em; 
+    cursor: pointer; 
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.ordini {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.ordine {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.ordine-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.ordine-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ordine-id {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.ordine-data {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.ordine-actions {
+    display: flex;
+    align-items: center;
+}
+
+.dettagli-button {
+    margin-right: 10px;
+}
+
+.stampa-fattura-form {
+    display: inline-block;
+}
+
+.ordine-body {
+    padding: 15px;
+}
+
+.acquisti-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.acquisti-table th, .acquisti-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.acquisti-table th {
+    background-color: #1663c7;
+    color: white;
+}
+
+.acquisti-table td img {
+    max-width: 100px;
+    height: auto;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.acquisti {
+    display: none;
+}
+
+.activeAcquisti {
+    display: block;
+}
+
+
+/* .pagamento-header, .indirizzo-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.pagamento-header .header-title, .indirizzo-header .header-title {
+    font-weight: bold;
+    font-size: 1.25em;
+} */
+
+.pagamento-body, .indirizzo-body {
+    padding: 10px 15px;
+    line-height: 200%;
+}

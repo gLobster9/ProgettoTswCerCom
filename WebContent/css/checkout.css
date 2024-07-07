@@ -1,0 +1,231 @@
+/* checkout.css */
+
+/* Reset base per uniformare il rendering tra i diversi browser */
+.checkout * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkout {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#checkoutTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+#checkoutTable th, #checkoutTable td {
+    padding: 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+#checkoutTable th {
+    background-color: #f1f3f5;
+    font-size: 1.2em;
+    border: 1px solid #dee2e6;
+}
+
+#riepilogoOrdine, #Descrizione {
+    width: 50%;
+}
+
+.data-consegna {
+    margin-bottom: 1.5rem;
+}
+
+.data-consegna-p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.box {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.metodo-di-pagamento, .indirizzo-spedizione {
+    margin-bottom: 1.5rem;
+}
+
+.pagamento-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.metodo-header, .indirizzo-header {
+    margin-bottom: 0.5rem;
+}
+
+.metodo-body label, .indirizzo-body label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.metodo-body input, .indirizzo-body input {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.checkout button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.checkout button:hover {
+    background-color: #0056b3;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.2em;
+}
+
+.riepilogo-ordine {
+    margin-bottom: 1.5rem;
+}
+
+.riepilogo-ordine table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.riepilogo-ordine th, .riepilogo-ordine td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.riepilogo-ordine th {
+    background-color: #f1f3f5;
+}
+
+.prodotti-carrello td {
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.immagine-prodotto {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.indirizzo-non-valido {
+	color: #cb0202;
+	margin-top: 8px;
+	font-size: 1em;
+	line-height: 130%;
+}
+
+/* #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modifica-pagamento {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    border-radius: 8px;
+}
+
+.modifica-pagamento .pagamento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.close-button {
+    background: #007bff; 
+    border: none; 
+    font-size: 1.5em; 
+    cursor: pointer; 
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+
+.modifica-pagamento .pagamento-body label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.modifica-pagamento .pagamento-body input {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.modifica-pagamento .non-valido, .indirizzo-spedizione .non-valida {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+Classe attiva per il pop-up
+.modifica-pagamento.activeModifica {
+    display: block;
+}
+
+Classe attiva per l'overlay
+#overlay.activeOverlay {
+    display: block;
+} */

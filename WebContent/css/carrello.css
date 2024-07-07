@@ -1,0 +1,142 @@
+/* Stile generale del corpo del carrello */
+.carrello {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Intestazione */
+.carrello h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #1663c7;
+}
+
+/* Tabella prodotti */
+#prodotti {
+	display: block;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-width: fit-content;
+  	margin: auto;
+}
+
+#prodotti tbody {
+	display: table;
+	width: 100%;
+}
+
+#prodotti th, #prodotti td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#prodotti th {
+    background-color: #1663c7;
+    color: white;
+}
+
+#prodotti tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Stile per le righe di prodotti */
+.productRow img {
+    width: 100px;
+    height: auto;
+}
+
+.productRow input {
+    width: 50px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Stile dei bottoni */
+.carrello button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrello button:hover {
+    background-color: #0056b3;
+}
+
+/* Stile dei bottoni specifici */
+.carrello .button2,.carrello .button22 {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.carrello .button22 {
+    background-color: #f24c00;
+}
+
+.carrello .button22:hover {
+    background-color: #d94300;
+}
+
+/* Stile per il div checkout */
+#checkout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#checkout button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+.niente {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #f24c00;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+.quantity-container input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 5px;
+}
+.quantity-container button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Rimuove le frecce al campo numerico */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

@@ -1,0 +1,194 @@
+/* ordiniAdmin.css */
+.ordiniAdmin {
+	box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.ordiniAdmin h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.ordiniAdmin h1 a {
+    text-decoration: none;
+    color: #1663c7;
+}
+
+/* Form Styles */
+.ordiniAdmin form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ordiniAdmin form label {
+    margin: 0 10px;
+    align-self: center;
+}
+
+.ordiniAdmin form input[type="text"],
+.ordiniAdmin form input[type="date"] {
+    padding: 10px;
+    margin: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+.ordiniAdmin form button {
+	align-self: center;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.ordiniAdmin form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+.ordiniAdmin table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.ordiniAdmin table th,
+.ordiniAdmin table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ordiniAdmin table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Specific Column Widths */
+.ordiniAdmin table th:nth-child(1),
+.ordiniAdmin table td:nth-child(1) {
+    width: 10%;
+}
+
+.ordiniAdmin table th:nth-child(2),
+.ordiniAdmin table td:nth-child(2) {
+    width: 15%;
+}
+
+.ordiniAdmin table th:nth-child(3),
+.ordiniAdmin table td:nth-child(3) {
+    width: 10%;
+}
+
+.ordiniAdmin table th:nth-child(4),
+.ordiniAdmin table td:nth-child(4) {
+    width: 10%;
+}
+
+.ordiniAdmin table th:nth-child(5),
+.ordiniAdmin table td:nth-child(5) {
+    width: 10%;
+}
+
+.ordiniAdmin table th:nth-child(6),
+.ordiniAdmin table td:nth-child(6) {
+    width: 30%;
+}
+
+.ordiniAdmin table th:nth-child(7),
+.ordiniAdmin table td:nth-child(7) {
+    width: 15%;
+}
+
+.ordiniAdmin table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Image Styles */
+.ordiniAdmin table img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.ordiniAdmin table button {
+    padding: 8px 16px;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ordiniAdmin table button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for Order Details Table */
+.ordiniAdmin .details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+    word-wrap: break-word;
+    background-color: #f1f1f1;
+}
+
+.ordiniAdmin .details-table th,
+.ordiniAdmin .details-table td {
+    padding: 8px;
+    border: 1px solid #bbb;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ordiniAdmin .details-table th {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.ordiniAdmin .details-table tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.ordiniAdmin .details-table img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.ordiniAdmin .details-table::after {
+  content: '';
+  display: block;
+  height: 15px;
+  background-color: white;
+}
+
+.divTabella {
+	overflow: auto;
+}
