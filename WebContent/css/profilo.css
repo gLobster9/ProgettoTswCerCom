@@ -222,6 +222,7 @@
 }
 
 .activeAcquisti {
+	overflow: auto;
     display: block;
 }
 

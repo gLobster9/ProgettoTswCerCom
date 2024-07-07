@@ -24,6 +24,7 @@
 
 .mostraProdotto td {
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /* <td> .Prodotto e .Descrizione */
@@ -33,7 +34,8 @@
 }
 
 .Descrizione {
-  width: 50%;
+  position: relative;
+  width: 100%;
   vertical-align: top;
 }
 
@@ -47,12 +49,19 @@
 }
 
 .img-zoom-result {
-    border: 1px solid #d4d4d4;
+  	visibility: hidden;
+    border: 5px groove #555;
+  	border-radius: 5px;
     width: 300px;
     height: 300px;
     background-repeat: no-repeat;
-    position: relative;
-    top: 20px;
+    position: absolute;
+	text-align: center;
+    top: 0;
+	bottom: 0;
+	left: 0px;
+  	margin: auto;
+  	z-index: 1;
 }
 
 /* caratteristiche finestra modale */
@@ -167,4 +176,21 @@
 .btn-shine:hover::before {
   top: -50%;
   left: -50%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+	.mostraProdotto tr {
+  		display: flex;
+  		flex-direction: column;
+	}
+
+	.img-zoom-result {
+		display: none;
+	}
+	
+	.Prodotto {
+		width: 100%;
+		box-sizing: border-box;
+	}
 }

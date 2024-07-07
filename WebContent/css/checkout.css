@@ -10,11 +10,21 @@
 .checkout {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 2rem;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     border: 1px solid #ddd;
+    overflow: auto;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.divCheckoutTable {
+	overflow: auto;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 2rem;
+	padding-bottom: 0px;
 }
 
 #checkoutTable {
@@ -136,7 +146,7 @@
 }
 
 .immagine-prodotto {
-    max-width: 50px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -147,6 +157,11 @@
 	margin-top: 8px;
 	font-size: 1em;
 	line-height: 130%;
+}
+
+#aggiungi-ordine {
+	padding: 2rem;
+	padding-top: 0px;
 }
 
 /* #overlay {
