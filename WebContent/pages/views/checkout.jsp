@@ -137,8 +137,6 @@
 										ProdottoOrdine prodottoOrdine = (ProdottoOrdine) o;
 										String prezzo = prodottoOrdine.getProdottoBean().getPrezzo().toPlainString();
 		
-										//if (prezzo.matches("[0-9]+"))
-										//	prezzo += ".00";
 								%>
 								<tr class="prodotti-carrello" id="prodotti-carrello">
 									<td class="tdt"><%=prodottoOrdine.getProdottoBean().getNome()%></td>

@@ -3,10 +3,7 @@
 <%@ page import="java.util.Collection" %>
 <%@ page import="model.prodotto.ProdottoBean" %>
 
-<% Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti");
-  	/* if (prodotti == null)
-		response.sendRedirect(request.getContextPath() + "/Catalogo"); */
-%>
+<% Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti"); %>
 
 <!DOCTYPE html>
 <html lang="it">
@@ -39,8 +36,6 @@
 	      	ProdottoBean prodotto = (ProdottoBean) o;
 	      	String prezzo = prodotto.getPrezzo().toPlainString();
 	
-		  	//if (prezzo.matches("[0-9]+"))
-	        //  	prezzo += ".00";
 	%>
 		<div class="elemento">
 			<table class="dettagli">
@@ -51,7 +46,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<%= prodotto.getTipo() %>
+						<p style="margin: 0px; color: #888; text-transform: capitalize;">Tipo: <%= prodotto.getTipo() %></p>
 						<br>
 						<%= prodotto.getNome() %>
 						<br>

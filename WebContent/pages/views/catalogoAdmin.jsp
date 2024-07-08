@@ -3,10 +3,7 @@
 <%@ page import="java.util.Collection" %>
 <%@ page import="model.prodotto.ProdottoBean" %>
 
-<% Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti");
-/* 	if (prodotti == null)
-    	response.sendRedirect(request.getContextPath() + "/Catalogo"); */
-%>
+<% Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti"); %>
 
 <!DOCTYPE html>
 <html lang="it">
@@ -141,7 +138,6 @@
 	</div>
 	<br>
 	
-  	<%-- SCRIPT NON FUNZIONANTE --%>
   	<script src="${pageContext.request.contextPath}/js/regexUpdateAggiuntaProdotto.js"></script>
   	<%@ include file="../footer.jsp" %>
 </body>

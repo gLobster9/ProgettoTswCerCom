@@ -15,18 +15,8 @@
 <!-- Recupera lo storico degli ordini dell'utente, viene costruito come mappa da /user/Profilo -->
 <% 
 	UtenteBean utenteBean = (UtenteBean) request.getSession().getAttribute("utente");
-	/* if(utenteBean == null) {
-		response.sendRedirect(request.getContextPath() + "/");
-		return;
-	} */
-	
-	
-	Map<?, ?> ordini = (Map<?, ?>) request.getAttribute("ordini");
-    /* if (ordini == null) {
-        response.sendRedirect(request.getContextPath() + "/Profilo");
-        return;
-    } */
-    
+		
+	Map<?, ?> ordini = (Map<?, ?>) request.getAttribute("ordini");   
     request.getSession().setAttribute("ordini", ordini);
 %>
 

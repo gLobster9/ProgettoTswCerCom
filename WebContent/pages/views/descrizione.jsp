@@ -22,8 +22,6 @@
 	
 	<%
 		String prezzo = prodottoBean.getPrezzo().toPlainString();
-		//if (prezzo.matches("[0-9]+"))
-		//	prezzo += ".00";
 	%>
 	
 	<table class="mostraProdotto">

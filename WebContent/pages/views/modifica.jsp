@@ -6,10 +6,6 @@
 
 <% 
 	ProdottoBean prodottoBean = (ProdottoBean) request.getAttribute("prodotto");
-/*  	Integer user = (Integer) request.getSession().getAttribute("tipoUtente"); 
-	if (user == null || !user.equals(Login.ADMIN)) {
-    	response.sendRedirect(request.getContextPath() + "/Catalogo");
-	} else {  */
 %>
 
 <!DOCTYPE html>
@@ -68,7 +64,3 @@
 	<script src="${pageContext.request.contextPath}/js/regexUpdateAggiuntaProdotto.js"></script>
 </body>
 </html>
-<%-- <% 
-	} 
-%>
- --%>

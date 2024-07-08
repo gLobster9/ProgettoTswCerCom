@@ -28,10 +28,14 @@
 	right: 10%;
 	margin-left: 60px;
 	text-shadow: 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000;
+	border-radius: 35px;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.5);
 }
 
 .img-per-slider a:hover {
-	color: #ffff9b !important;
+	color: #ffff9b;
+	background-color: rgba(55,55,55,0.5);
 }
 
 a {

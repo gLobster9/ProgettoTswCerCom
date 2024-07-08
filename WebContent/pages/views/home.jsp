@@ -3,10 +3,7 @@
 <%@ page import="java.util.Collection" %>
 <%@ page import="model.prodotto.ProdottoBean" %>
 
-<% Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti");
-/*   if (prodotti == null)
-    response.sendRedirect(request.getContextPath() + "/"); */
-%>
+<% Collection<?> prodotti = (Collection<?>) request.getAttribute("prodotti"); %>
 
 <!DOCTYPE html>
 <html lang="it">
