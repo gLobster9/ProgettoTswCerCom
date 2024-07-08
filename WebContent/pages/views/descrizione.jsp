@@ -42,10 +42,6 @@
 					<p>Descrizione:</p>
 				</div>
 				<p>
-					<%= prodottoBean.getTipo() %>
-					<br>
-				</p>
-				<p>
 					<%= prodottoBean.getDescrizione() %>
 					<br>
 				</p>
