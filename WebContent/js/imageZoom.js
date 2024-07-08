@@ -6,8 +6,10 @@ function imageZoom(imgID, resultID) {
     lens.setAttribute("class", "img-zoom-lens");
     img.parentElement.insertBefore(lens, img);
 
+	result.style.display = "block";
     const cx = result.offsetWidth / lens.offsetWidth;
     const cy = result.offsetHeight / lens.offsetHeight;
+	result.style.display = null;
 
     result.style.backgroundImage = `url(${img.src})`;
     result.style.backgroundSize = `${img.width * cx}px ${img.height * cy}px`;

@@ -23,17 +23,17 @@
 	<body>
 		<%@ include file="../header.jsp"%>
 		<div class="container">
-			<div class="slider-button-container">
-				<button class="left" onclick="prec()"><img class="negative" src="${pageContext.request.contextPath}/images/system/prec.png" alt="Precedente"></button>
-				<button class="right" onclick="next()"><img class="negative" src="${pageContext.request.contextPath}/images/system/next.png" alt="Successivo"></button>
-			</div>
 	
 			<div class="slider">
 				<div class="img-per-slider">
-					<img id="img-1" class="active" src="${pageContext.request.contextPath}/images/system/adv/adv-1.png" data-value="d1" alt="alt1">
-					<img id="img-2" src="${pageContext.request.contextPath}/images/system/adv/adv-2.png" data-value="d2" alt="alt2">
-					<img id="img-3" src="${pageContext.request.contextPath}/images/system/adv/adv-3.png" data-value="d3" alt="alt3">
-					<img id="img-4" src="${pageContext.request.contextPath}/images/system/adv/adv-4.png" data-value="d4" alt="alt4">
+					<img id="img-1" class="active" src="${pageContext.request.contextPath}/images/system/banner1.webp" data-value="d1" alt="alt1">
+					<a style="visibility: visible;" href="${pageContext.request.contextPath}/DescrizioneProdotto?id=5" id="a1">Tastiera Meccanica Silenziosa</a>
+					<img id="img-2" src="${pageContext.request.contextPath}/images/system/banner2.jpg" data-value="d2" alt="alt2">
+					<a href="${pageContext.request.contextPath}/DescrizioneProdotto?id=2" id="a2">Tastiera Compatta Wireless</a>
+					<img id="img-3" src="${pageContext.request.contextPath}/images/system/banner3.webp" data-value="d3" alt="alt3">
+					<a href="${pageContext.request.contextPath}/DescrizioneProdotto?id=8" id="a3">Tastiera Ergonomica</a>
+					<img id="img-4" src="${pageContext.request.contextPath}/images/system/banner4.webp" data-value="d4" alt="alt4">
+					<a href="${pageContext.request.contextPath}/DescrizioneProdotto?id=3" id="a4">Tastiera Professionale</a>
 				</div>
 			</div>
 
