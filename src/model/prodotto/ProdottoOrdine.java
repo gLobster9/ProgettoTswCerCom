@@ -1,6 +1,7 @@
 package model.prodotto;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class ProdottoOrdine {
     private ProdottoBean prodottoBean;
@@ -36,7 +37,8 @@ public class ProdottoOrdine {
     }
 
     public BigDecimal getPrezzoTotale() {
-        return prodottoBean.getPrezzo().multiply(BigDecimal.valueOf(quantita));
+    	BigDecimal prezzoSenzaIVA = prodottoBean.getPrezzo().multiply(BigDecimal.valueOf(quantita));
+        return prezzoSenzaIVA.add(prezzoSenzaIVA.multiply(BigDecimal.valueOf(prodottoBean.getIVA())).divide(new BigDecimal(100))).setScale(2, RoundingMode.CEILING);
     }
 
 	public String toString() {
