@@ -13,13 +13,6 @@ CREATE TABLE Prodotto (
     grafica VARCHAR(400) NOT NULL,
     descrizione VARCHAR(150) NOT NULL,
     quantitaInStock INT DEFAULT 0 NOT NULL
-    /* 
-    coloreKeyboard VARCHAR(50),
-    tipoKeyboard VARCHAR(50),
-    opzioneSwitch VARCHAR(50),
-    quantitaSetSwitch INT,
-    colorazioneKeycaps VARCHAR(50) 
-    */
 );
 
 DROP TABLE IF EXISTS Utente;
