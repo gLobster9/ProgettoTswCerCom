@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 import model.CarrelloModel;
 
 @WebServlet("/AggiungiProdotto")
-public class AggiungiProdotto extends HttpServlet {
+public class CartAggiungiProdotto extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
