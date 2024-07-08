@@ -105,7 +105,7 @@
 			    		</tr>
 			    		<tr>
 				    		<td colspan="2">
-				    			<%= prodotto.getTipo() %><br>
+				    			<p style="margin: 0px; color: #888; text-transform: capitalize;">Tipo: <%= prodotto.getTipo() %></p><br>
 				    			<%= prodotto.getNome() %><br>
 				    		</td>
 				    	</tr>
